@@ -1,0 +1,12 @@
+# This is a templated file from https://github.com/OtterdogTest/.eclipsefdn/blob/main/otterdog/blueprints/test_required_file.yml for test-repo7, desc: '' blabla
+name: Dependabot auto-merge
+on: pull_request_target
+
+permissions: read-all
+
+jobs:
+  dependabot:
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: adoptium/.github/.github/workflows/dependabot-auto-merge.yml@main
